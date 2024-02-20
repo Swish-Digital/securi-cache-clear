@@ -1,0 +1,43 @@
+{
+    "name": "swish-digital/craft-securi-cache-clear",
+    "description": "Purge Securi caches from Craft.",
+    "type": "craft-plugin",
+    "license": "mit",
+    "support": {
+        "email": "info@swishdigital.co"
+    },
+    "require": {
+        "php": ">=8.0.2",
+        "craftcms/cms": "^4.0.0"
+    },
+    "require-dev": {
+        "craftcms/ecs": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "swishdigital\\craftsecuricacheclear\\": "src/"
+        }
+    },
+    "extra": {
+        "handle": "securi-cache-clear",
+        "name": "Securi Cache Clear",
+        "developer": "Swish Digital",
+        "documentationUrl": "https://github.com/Swish-Digital/securi-cache-clear/blob/main/README.md"
+    },
+    "scripts": {
+        "check-cs": "ecs check --ansi",
+        "fix-cs": "ecs check --ansi --fix",
+        "phpstan": "phpstan --memory-limit=1G"
+    },
+    "config": {
+        "sort-packages": true,
+        "platform": {
+            "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}
+
